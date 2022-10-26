@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav-container container">
+      <div class="hamburger lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="menu">
+        <ul>
+          <li>Home</li>
+          <li>Auction</li>
+          <li>Profile</li>
+          <li>About</li>
+        </ul>
+      </nav>
+
+      <div class="heading">
+        <h1>Hello World</h1>
+      </div>
+
+      <div class="profile">
+        <img src="profile.png" alt="hello" />
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
+
+<script>
+  const hamburgerEl = document.querySelector('.hamburger')
+
+  hamburgerEl.onclick = function () {
+    document.querySelector('.menu').classList.toggle('m-open')
+    this.classList.toggle('h-open')
+  }
+</script>
